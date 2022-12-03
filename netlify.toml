@@ -6,5 +6,5 @@
 
 [[redirects]]
   from = "/*"
-  to = "/db.json/"
+  to = "/index.html/"
   status = 200

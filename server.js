@@ -11,7 +11,7 @@ const cors=require("cors");
        credentials:true, //access-control-allow-credentials:true
        optionSuccessStatus:200,
 }
-
+response.setHeader("Access-Control-Allow-Origin", "*");
  app.use(cors(corsOptions)) 
 
 server.use(middlewares);

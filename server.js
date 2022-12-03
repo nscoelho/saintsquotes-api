@@ -4,18 +4,18 @@ const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 
 const express = require("express");
-const debug = require("debug")("server");
+const cors = require('cors');
 const app = express();
 
 const port = process.env.PORT || 3000;
-const cors = require('cors');
-
+ 
+app.use(cors())
 app.use(
   cors({
     origin: ["https://saintsquotes.org/"],
     methods: ["GET", "POST", "DELETE"],
     credentials: true,
-    origin: true,
+    origin: true
   })
 );
 

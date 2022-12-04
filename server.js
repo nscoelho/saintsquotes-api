@@ -8,7 +8,7 @@ const app = express();
 app.use(
   cors({
     origin: ["https://saintsquotes.org/"],
-    methods: ["GET", "POST", "DELETE"],
+    methods: ["GET"],
     headers: {"Access-Control-Allow-Origin": "*"},
     credentials: true,
     origin: true

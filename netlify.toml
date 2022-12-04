@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/api/*"
+  from = "https://saintsquotes.org/*"
   to = "https://saintsquotes-api.netlify.app/:splat"
   status = 200
   force = true

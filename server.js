@@ -3,6 +3,7 @@ const server = jsonServer.create();
 const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults({ noCors: true })
 const port = process.env.PORT || 3000;
+/*
 const app = express();
 
  
@@ -15,7 +16,7 @@ app.use(
     origin: true
   })
 );
-
+*/
 server.use(middlewares);
 server.use(router);
 

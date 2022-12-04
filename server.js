@@ -1,9 +1,10 @@
 const jsonServer = require('json-server');
 const server = jsonServer.create();
 const router = jsonServer.router('db.json');
-const middlewares = jsonServer.defaults();
+const middlewares = jsonServer.defaults({ noCors: true })
 const port = process.env.PORT || 3000;
 const app = express();
+
  
 app.use(
   cors({
